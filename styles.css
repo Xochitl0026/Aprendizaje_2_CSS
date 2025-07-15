@@ -1,3 +1,10 @@
+
+/* El PUNTO es para las clases */
 .faltante{
     color: rgb(255, 0, 0);
+}
+
+/* El  # es para los ID  */
+#igrediente-secreto{
+    color: chartreuse;
 }
