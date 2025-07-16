@@ -7,4 +7,6 @@ p{
     font-family: sans-serif ;
 /* TAMAÑO DEL TEXTO */
     font-size: 10px;
+/* GROSOR DEL TEXTO */
+    font-weight:bold;
 }
