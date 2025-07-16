@@ -8,6 +8,7 @@
 .formulario_input{
     padding: 6px 10px;
     width: 100%;
+    margin: 10px; /*LE PUSO UN MARGEN*/
 }
 /* CLASE 3= AFECTA AL BOTTON*/
 .formulario_submit{
