@@ -1,21 +1,5 @@
-
-/* El PUNTO es para las clases */
-p {
-    color: rgb(92, 8, 47);
-
-    /* Tipografía desde Google Fonts */
-    font-family: 'Montserrat', sans-serif;
-
-    /* Tamaño del texto */
-    font-size: 40px;
-
-    /* Grosor del texto */
-    font-weight: 800;
-}
-h1{
-    text-align: center;
-}
-
-body {
-    background-color: rgb(206, 201, 255);
+div{
+    background-color: blueviolet;
+    width: 200px;
+    height: 100px;
 }
