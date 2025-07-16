@@ -1,18 +1,7 @@
+/* CLASE 1=BOX*/
+.box{
+    background: aquamarine;
+    height: 150px;
+    width: 150px;
 
-/* CLASE 1= AFECTA AL FONDO*/
-.formulario{
-    background-color: aqua;
-}
-/* CLASE 2= AFECTA AL TAMAÑO DEL FORMULARIO */
-.formulario_input{
-    padding: 6px 10px;
-    width: 100%;
-    margin: 10px; /*LE PUSO UN MARGEN*/
-}
-/* CLASE 3= AFECTA AL BOTTON*/
-.formulario_submit{
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    background: rgb(197, 40, 197);
-    width: 50%;
 }
