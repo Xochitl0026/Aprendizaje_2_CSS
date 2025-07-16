@@ -10,3 +10,7 @@ p{
 /* GROSOR DEL TEXTO */
     font-weight:800
 }
+
+body {
+    background-color: rgb(151, 139, 255);
+}
