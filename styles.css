@@ -7,5 +7,5 @@ div{
     
     border-width: 5px; /*BORDE*/
     border-color: black; /*COLOR*/
-    border-style: solid; /*ESTILO*/
+    border-style: dashed; /*ESTILO*/
 }
