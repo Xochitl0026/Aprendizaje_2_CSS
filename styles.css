@@ -4,12 +4,7 @@ div{
     width: 150px;
     margin: auto;
     text-align: center;
-}
-/*DIVIDIR EL MISMO DIV ESTA MAL PERO
-POR CUESTION PRACTICA ASI SE DEJARÁ
-
-PERO ESTO SERÁ EL BORDE DE LA CAJA */
-div{
+    
     border-width: 5px; /*BORDE*/
     border-color: black; /*COLOR*/
     border-style: solid; /*ESTILO*/
