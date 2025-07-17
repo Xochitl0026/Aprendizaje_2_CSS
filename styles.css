@@ -1,7 +1,30 @@
-/* CLASE 1=BOX*/
-.box{
-    background: aquamarine;
-    height: 150px;
-    width: 150px;
-    margin: 10px;
+/* Darle estilo*/
+body{
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(255, 183, 217)
+}
+
+/* Esta es una clase por eso el PUNTO*/
+.card{
+    background: rgb(59, 0, 77);
+    text-align: center;
+    width: 400px;
+}
+
+h1{
+    padding-top: 10px;
+    font-size: 22px;
+    margin: 0;
+}
+h2{
+    font-size: 14px;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+p{
+    font-size: 10px;
+    padding: 20px;
+    background: rgb(150, 240, 128);
+    text-align: justify;
 }
