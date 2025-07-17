@@ -1,11 +1,15 @@
+body{
+    margin: 0;
+}
+
 /*CAJA*/
-div{
-    background: rgb(219, 129, 129);
-    width: 150px;
-    margin: auto;
-    text-align: center;
-    
-    border-width: 5px; /*BORDE*/
-    border-color: black; /*COLOR*/
-    border-style: dashed; /*ESTILO*/
+.box{
+    width: 100px;
+    height: 100px;
+    background: rgb(130, 37, 223);
+    margin: 10px;
+}
+.box-default{
+    padding: 25px;
+    border: 10px solid black;
 }
