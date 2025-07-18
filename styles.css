@@ -3,11 +3,11 @@
 }
 
 .box{
-   width: 284px; /*ANCHO*/
-   height: 8400px; /*LARGO*/
+   width: 84px; /*ANCHO*/
+   height: 840px; /*LARGO*/
    margin: 20px; /*MARGEN*/
 
-   background: rgb(255, 122, 122); /*LARGO*/
+    /*background: rgb(255, 122, 122);LARGO*/
    background-image: url"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.besthdwallpaper.com%2Fartistic%2Fbeautiful-anime-vocaloid-hatsune-miku-on-stage-dt_en-US-107941.html&psig=AOvVaw1F5o4_EFnKBywPDomAY7BC&ust=1752955252036000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCLju2qqZx44DFQAAAAAdAAAAABAE";
 
 }
