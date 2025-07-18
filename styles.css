@@ -9,6 +9,6 @@ body{
 
     /*UNA IMAGEN DENTRO DE LA CAJA*/
    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi0hQWJJ9Y3-q2bUBFqZ661DQmsZKPp_6jKvUfKBPNs3OC6-fXAHV8SEJlm5W3h-NzIiI&usqp=CAU");
-   /*UNA PROPIEDAD PARA ADAPTAR EL ANCHO TOTAL DE LA IMAGEN*/
-   background-size:100%;
+   /*ES UN VALOR QUE OBLIGA AL CONTENEDOR LA IMAGEN ENTRE (SE AJUSTA LO MAS POSIBLE*/
+   background-size: contain;
 }
