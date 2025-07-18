@@ -3,10 +3,12 @@ body{
 }
 
 .box{
-   width: 1000px; /*ANCHO*/
-   height: 1000px; /*LARGO*/
+   width: 500px; /*ANCHO*/
+   height: 500px; /*LARGO*/
    margin: 20px; /*MARGEN*/
 
-    /*background: rgb(255, 122, 122);LARGO*/
+    /*UNA IMAGEN DENTRO DE LA CAJA*/
    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi0hQWJJ9Y3-q2bUBFqZ661DQmsZKPp_6jKvUfKBPNs3OC6-fXAHV8SEJlm5W3h-NzIiI&usqp=CAU");
+   /*UNA PROPIEDAD PARA ADAPTAR EL ANCHO TOTAL DE LA IMAGEN*/
+   background-size:100%;
 }
