@@ -1,16 +1,16 @@
 body{
-    background-color: rgb(2, 71, 62);
+    background-color: rgb(20, 2, 71);
     margin: 0;
     font-family: sans-serif ;
     color: rgb(255, 255, 255);
 }
 
 .box{
-   width: 100px; /*ANCHO*/
+   width: 100%; /*ANCHO COMPLETO*/
    height: 100px; /*LARGO*/
    margin: 20px; /*MARGEN*/
    margin: 0;
-   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAr0INaOFzJU2Au2b6KE_v2b-s1T5gjS6d7A&s");
+   background-image: url("https://www.lasallecentrouniversitario.es/wp-content/uploads/2018/11/hatsune-miku.jpg");
    background-color: black;
    background-size: cover;
    background-position: top;
