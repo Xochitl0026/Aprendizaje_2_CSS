@@ -1,19 +1,19 @@
 body{
-    background-color: rgb(200, 252, 245);
+    background-color: rgb(2, 71, 62);
+    margin: 0;
+    font-family: sans-serif ;
+    color: rgb(255, 255, 255);
 }
 
 .box{
-   width: 400px; /*ANCHO*/
-   height: 150px; /*LARGO*/
+   width: 100px; /*ANCHO*/
+   height: 100px; /*LARGO*/
    margin: 20px; /*MARGEN*/
-   background-color: black;
-   /*UNA IMAGEN DENTRO DE LA CAJA*/
+   margin: 0;
    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAr0INaOFzJU2Au2b6KE_v2b-s1T5gjS6d7A&s");
-   /*SE ADAPTA AL 100% A LA CAJA
-   Y NO SE REPITE LA IMAGEN*/
-   background-size: 40px;
+   background-color: black;
+   background-size: cover;
    background-position: top;
-   /*CENTRA LA IMAGEN ARRIBA*/
-   background-repeat: repeat-y;
-   /*SE REPITE LA IMAGEN EN EJE X*/
+   background-attachment: fixed;
+   /*HACE QUE LA IMAGEN SE VEA DE ARRIBA HACIA ABAJO CUANDO BAJAS CON EL MAUSE*/
 }
