@@ -3,7 +3,7 @@ body{
 }
 
 .box{
-   width: 40px; /*ANCHO*/
+   width: 400px; /*ANCHO*/
    height: 150px; /*LARGO*/
    margin: 20px; /*MARGEN*/
    background-color: black;
