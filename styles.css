@@ -3,12 +3,12 @@ body{
 }
 
 .box{
-   width: 500px; /*ANCHO*/
-   height: 800px; /*LARGO*/
+   width: 1000px; /*ANCHO*/
+   height: 1000px; /*LARGO*/
    margin: 20px; /*MARGEN*/
 
     /*UNA IMAGEN DENTRO DE LA CAJA*/
-   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi0hQWJJ9Y3-q2bUBFqZ661DQmsZKPp_6jKvUfKBPNs3OC6-fXAHV8SEJlm5W3h-NzIiI&usqp=CAU");
-   /*ES UN VALOR QUE OBLIGA AL CONTENEDOR LA IMAGEN ENTRE (SE AJUSTA LO MAS POSIBLE*/
-   background-size: contain;
+   background-image: url("https://www.lasallecentrouniversitario.es/wp-content/uploads/2018/11/hatsune-miku.jpg");
+   /*SE ADAPTA*/
+   background-size: cover;
 }
