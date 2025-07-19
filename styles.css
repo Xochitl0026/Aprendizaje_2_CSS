@@ -11,9 +11,9 @@ body{
    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAr0INaOFzJU2Au2b6KE_v2b-s1T5gjS6d7A&s");
    /*SE ADAPTA AL 100% A LA CAJA
    Y NO SE REPITE LA IMAGEN*/
-   background-size: cover;
-   background-position: center;
-   /*CENTRA LA IMAGEN AL CENTRO*/
+   background-size: 40px;
+   background-position: top;
+   /*CENTRA LA IMAGEN ARRIBA*/
    background-repeat: no-repeat;
    /*HACE QUE NO SE REPITA LA IMAGEN*/
 }
