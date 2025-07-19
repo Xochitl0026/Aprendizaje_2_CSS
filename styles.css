@@ -9,6 +9,9 @@ body{
 
     /*UNA IMAGEN DENTRO DE LA CAJA*/
    background-image: url("https://www.lasallecentrouniversitario.es/wp-content/uploads/2018/11/hatsune-miku.jpg");
-   /*SE ADAPTA*/
+   /*SE ADAPTA AL 100% A LA CAJA
+   Y NO SE REPITE LA IMAGEN*/
    background-size: cover;
+   background-position: center;
+   /*CENTRA LA IMAGEN AL CENTRO*/
 }
