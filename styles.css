@@ -1,11 +1,31 @@
-body{
+body {
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+/* Esta es una clase por eso el PUNTO */
+.card {
+    background: rgb(90, 230, 218);
+    text-align: center;
+    width: 400px;
+}
+
+h1 {
+    padding-top: 10px;
+    font-size: 22px;
     margin: 0;
 }
-.box{
-   width: 300px; /*ANCHO COMPLETO*/
-   height: 400px; /*LARGO*/
-   background: rgb(186, 67, 255);
-   margin: auto;
-   margin-top: 20px;
-   box-shadow: 20px 20px 50px 10px #000;
+
+h2 {
+    font-size: 14px;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+p {
+    font-size: 10px;
+    padding: 20px;
+    background: rgb(186, 39, 255);
+    text-align: justify;
 }
