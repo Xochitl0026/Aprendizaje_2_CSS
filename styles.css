@@ -5,8 +5,8 @@ body{
 .box{
    width: 300px; /*ANCHO COMPLETO*/
    height: 400px; /*LARGO*/
-   background: linear-gradient(to top,transparent,#25ddfd,transparent);
-    /*DERECHA EL DEGRADADO*/
+   background: radial-gradient(transparent,#25ddfd,);
+    /*CENTRO EL DEGRADADO*/
    margin:0;
    border-radius: 7px;
    margin: auto;
