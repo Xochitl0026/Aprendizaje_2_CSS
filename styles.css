@@ -1,21 +1,11 @@
 body{
-    background-color: rgb(166, 70, 255);
     margin: 0;
 }
 .box{
    width: 300px; /*ANCHO COMPLETO*/
    height: 400px; /*LARGO*/
-   background: radial-gradient(transparent,#25ddfd);
-    /*CENTRO EL DEGRADADO*/
-   margin:0;
-   border-radius: 7px;
+   background: rgb(186, 67, 255);
    margin: auto;
    margin-top: 20px;
-   border-top: 6px solid #000;
-}
-h1{
-    margin: 0;
-    text-align: center;
-    padding: 20px;
-    font-family: sans-serif;
+   box-shadow: 20px 20px 50px 10px #000;
 }
