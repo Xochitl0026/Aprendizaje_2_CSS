@@ -3,9 +3,20 @@ body{
     margin: 0;
 }
 .box{
-   width: 400px; /*ANCHO COMPLETO*/
+   width: 300px; /*ANCHO COMPLETO*/
    height: 400px; /*LARGO*/
-   background: linear-gradient(#25ddfd, transparent);
+   background: linear-gradient(transparent,#25ddfd);
    margin:0;
-   width:100%;
+   border-radius: 7px;
+   margin: auto;
+   margin-top: 20px;
+   border-top: 6px solid #000;
+   transform: rotate(90 deg);
+   /*ROTACION DE DEGRADADO*/
+}
+h1{
+    margin: 0;
+    text-align: center;
+    padding: 20px;
+    font-family: sans-serif;
 }
