@@ -10,6 +10,16 @@ body {
     text-align: center;
     width: 400px;
 }
+.card_tit{
+    padding-top: 10px;
+    font-size: 22px;
+    margin: 0;
+}
+.card_sub{
+    padding-top: 10px;
+    font-size: 22px;
+    margin: 0;
+}
 
 h1 {
     padding-top: 10px;
@@ -23,7 +33,7 @@ h2 {
     letter-spacing: 2px;
 }
 
-p {
+.card_cont{
     font-size: 10px;
     padding: 20px;
     background: rgb(186, 39, 255);
