@@ -1,9 +1,11 @@
 body{
     background-color: rgb(166, 70, 255);
+    margin: 0;
 }
 .box{
    width: 400px; /*ANCHO COMPLETO*/
    height: 400px; /*LARGO*/
    background: linear-gradient(#25ddfd, transparent)
-   /*CONVIENTE EL FONDO EN UN INGREDINTE LINEAL*/
+   margin:0;
+   width:100%;
 }
