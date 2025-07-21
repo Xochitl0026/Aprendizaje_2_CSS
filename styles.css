@@ -1,3 +1,6 @@
+body{
+    background-color: rgb(166, 70, 255);
+}
 .box{
    width: 400px; /*ANCHO COMPLETO*/
    height: 400px; /*LARGO*/
