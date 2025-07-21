@@ -1,12 +1,8 @@
-body{
-    
-}
-
 .box{
    width: 400px; /*ANCHO COMPLETO*/
    height: 400px; /*LARGO*/
    background-image: url("https://www.lasallecentrouniversitario.es/wp-content/uploads/2018/11/hatsune-miku.jpg");
-   background: linear-gradient(rgb(153, 255, 204), rgb(164, 4, 204)
+   background: linear-gradient(rgb(153, 255, 204), transparent)
    )
    /*CONVIENTE EL FONDO EN UN INGREDINTE LINEAL*/
 }
