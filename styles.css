@@ -41,9 +41,8 @@ input,textarea{
 textarea{
     /*MINIMOS Y MAXIMOS DE ALTO*/
     min-width: 100%;/*UN MINIMO DEL 100%*/
-    min-height: 100px;
-    max-height: 200px;
     resize:none ;/*EL TEXTO NO SE MUEVE*/
+    min-height: 100px;
     font-family: sans-serif;
     /*PROPIEDAD QUE SE ADAPTA AL ESPACIO MIENTRAS ESCRIIBIMOS*/
     font-size: content;
