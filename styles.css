@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+}
+form{
+    background-color: rgb(167, 179, 187) ;
+}
+.form_input{
+    padding: 6px 20px;
+}
+input{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px 12px;
+    border:none; /*LOS BORDES NO ESTEN EN TODOS LADOS*/
+    border-left: 2px solid rgb(54, 107, 221);
+}
