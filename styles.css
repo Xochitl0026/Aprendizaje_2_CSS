@@ -15,9 +15,23 @@ body {
 }
 .card_2{
     background-color: grey ;
+    text-align: center;
+    width: 300px;
+    margin: auto;
+    margin-top: 10%;
+    padding:20px 10px;
+    box-shadow: 0px 0px 30px #0006;
+    border-radius: 8px;
 }
 .card_3{
     background-color: rgb(136, 110, 252) ;
+    text-align: center;
+    width: 300px;
+    margin: auto;
+    margin-top: 10%;
+    padding:20px 10px;
+    box-shadow: 0px 0px 30px #0006;
+    border-radius: 8px;
 }
 .card_tit{
     font-size: 22px;
