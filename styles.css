@@ -8,7 +8,10 @@ h2{
     text-align: center;
     margin: 0;
     margin-bottom: 10px;
-
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 22px;
+    padding: 10px;
 }
 form{
     background-color: transparent /*rgb(192, 220, 238)*/;
