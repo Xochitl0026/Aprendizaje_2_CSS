@@ -1,8 +1,15 @@
 body{
     margin: 0;
+    font-family: sans-serif;
+}
+h2{
+    text-align: center;
 }
 form{
-    background-color: rgb(192, 220, 238) ;
+    background-color: rgb(192, 220, 238);
+        padding: 20px 0;
+        max-width: 600px; 
+        margin:auto;
 }
 .form_input{
     padding: 6px 20px;
