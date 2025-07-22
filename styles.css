@@ -4,6 +4,9 @@ body{
 }
 h2{
     text-align: center;
+    margin: 0;
+    margin-bottom: 10px;
+
 }
 form{
     background-color: rgb(192, 220, 238);
@@ -11,7 +14,8 @@ form{
         max-width: 500px; 
         margin:auto;
         box-shadow: 0px 0px 35px #0007;/*SOMBRA*/
-}
+        margin-top: 50px;
+    }
 
 .form_input{
     padding: 6px 20px;
