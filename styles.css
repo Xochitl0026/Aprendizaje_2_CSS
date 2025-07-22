@@ -21,6 +21,7 @@ form{
         box-shadow: 0px 0px 55px rgba(111, 226, 255, 0.133);/*SOMBRA DEL FORMULARIO*/
         margin-top: 30px;
         border-radius: 8px;
+        font-size: 16px;
     }
 
 .form_input{
