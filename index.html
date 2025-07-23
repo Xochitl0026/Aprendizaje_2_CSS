@@ -3,28 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MIKU</title>
-    <link rel="icon" href="./assest/incono.jpg"">
+    <title>MIKU_Select, Datalist y Option</title>
+    <link rel="icon" href="./incono.jpg"">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<!--TEXT AREA-->
     <form>
         <h2>Formulario de contacto</h2>
-        <!--TEXT AREA_1-->
+        <fieldset>
+            <legend>Informacion</legend>
+        <!--SIMPLE INPUT-->
+                <div class="form_input">
+                    <label>Nombre completo
+                        <input type="text" placeholder="Xochitl Soto" id="nombre">
+                    </label> 
+                </div>
+                <div class="form_input">
+                    <label>Email
+                        <input type="email" placeholder="ejemplo@gmail.com">
+                    </label> 
+                </div>
+                <div class="form_input">
+                    <label>Asunto
+                        <input type="text" placeholder="El asunto de tu Mensaje">
+                    </label> 
+                </div>
+        </fieldset>
+<!--SELECT & OPTION-->
         <div class="form_input">
-            <input name="text" placeholder="Nombre completo">
+            <label>Tipo de miku
+                <select name="type-of-user"> <!--ES PARA RECIBIR DATOS= ES EL VALUE-->
+                    <option value="user1">Miku sakura</option>
+                    <option value="user2">Miku vocalid</option>
+                    <option value="user3">Miku coneja</option>
+            </select>
+            </label>
         </div>
+<!--DATALIST & OPTION-->
         <div class="form_input">
-            <input name="email" placeholder="Correo">
+            <label>Referente
+                <input list="referente" name="referente">
+                <datalist id="referente" name="type-of-user">
+                    <option value="Musica">Youtube</option>
+                    <option value="Diubjos">Intagram</option>
+                    <option value="Videojuego">Play</option>
+                </datalist>
+            </label>
         </div>
-        <!--TEXT AREA_2= ESTA NO ES COMO LOS INPUT'S Y SE PUEDE ESCRIBIR DENTRO-->
+<!--TEXTAREA-->
         <div class="form_input">
-            <!--MAXLENGHT ES EL MAXIMO DE PALABRAS QUE PUEDES ESCRIIR-->
-            <textarea maxlength="140"
-            placeholder="Deja tu opinion sobre Miku"></textarea>
+            <label>Mensaje
+                <textarea maxlength="140"
+                placeholder="Deja tu opinion sobre Miku..."></textarea>
+            </label> 
+        </div>
+<!--DAR CLICK AL TEXTO Y QUE PUEDA ESCRIBIR-->
+        <div class="form_input">
+            <label>Acepto los <a href="terms.html" target="_blank">terminos y condiciones</a>
+                <input type="checkbox" class="checkbox">
+            </label> 
         </div>
     </form>
-
 </body>
 </html>
