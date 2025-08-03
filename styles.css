@@ -1,76 +1,77 @@
-body{
-    margin: 0;
-    font-family: sans-serif;
-    color: #eee;
-    background:linear-gradient(to bottom,#333,#000)
-    /*ES UN DEGRADADO*/
+body {
+  background-color: black;
 }
-h2{
-    text-align: center;
-    margin: 0;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    font-weight: 100;
-    font-size: 22px;
-    padding: 10px;
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+h2 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 50px;
+  animation: cambiaRosa 3s linear infinite;
+  margin-bottom: 0; /* para evitar espacios extra */
 }
-form{
-    background-color: transparent /*rgb(192, 220, 238)*/;
-        padding: 20px 0;
-        max-width: 500px; 
-        margin:auto;
-        box-shadow: 0px 0px 55px rgba(111, 226, 255, 0.133);/*SOMBRA DEL FORMULARIO*/
-        margin-top: 30px;
-        border-radius: 8px;
-        font-size: 16px;
-        margin-bottom:40px;
-    }
-.form_input{
-    padding: 6px 20px;
+
+@keyframes cambiaRosa {
+  0%   { color: #ffafb3; }
+  33%  { color: #ff3399; }
+  66%  { color: #ff5f87; }
+  100% { color: #fa66ff; }
 }
-/*PARA DARLE MISMO FROMATO A OTRO DIV SE SEPARA POR COMAS*/
-input,textarea, select{
-    width: 100%;/*UN MINIMO DEL 100%*/
-    box-sizing: border-box;
-    padding: 6px 8px;
-    border:none; /*LOS BORDES NO ESTEN EN TODOS LADOS*/
-    border: 1px solid rgb(54, 221, 199);
-    box-shadow: 0px, 0px, 15px #0003;
-    background-color: transparent;
-    border-radius: 4px;
-    color: rgb(175, 193, 255);
+
+.fixed-gif-left {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 500px;
+    height: auto;
+    z-index: 9999;
+    pointer-events: none;
 }
-option{
-    background-color: #282836;
+
+article {/* Estilo general del contenedor principal */
+  display: grid; /* Usa grid para organizar elementos */
+  place-items: center; /* Centra los elementos vertical y horizontalmente */
+  height: 100vh; /* Ocupa toda la altura de la pantalla */
+  perspective: 1000px; /* Agrega profundidad 3D a los hijos */
+  transform-style: preserve-3d; /* Mantiene la perspectiva para elementos hijos */
 }
-textarea{
-    /*MINIMOS Y MAXIMOS DE ALTO*/
-    min-width: 100%;/*UN MINIMO DEL 100%*/
-    resize:none ;/*EL TEXTO NO SE MUEVE*/
-    min-height: 100px;
-    font-family: sans-serif;
-    /*PROPIEDAD QUE SE ADAPTA AL ESPACIO MIENTRAS ESCRIIBIMOS*/
-    font-size: content;
+div {/* Caja gris con sombras internas */
+  background-color: #ddd; /* Color gris claro de fondo */
+  border-radius: 2rem; /* Bordes redondeados */
+    box-shadow: 
+    inset 10px 10px 10px #999, /* Sombra interna oscura en la esquina inferior derecha */
+    inset -10px -10px 10px #fff; /* Sombra interna clara en la esquina superior izquierda */
+  width: 280px; /* Ancho fijo */
+  aspect-ratio: 1; /* Hace que el div sea cuadrado (1:1) */
+  transition: transform 1s; /* Transición suave en las transformaciones 3D */
 }
-label{
-    font-size: 0.88en;
-    line-height: 2;
+img.main {/* Imagen que representa el dibujo sobre el div */
+  position: absolute; /* Se posiciona sobre el div */
+  width: 11%; /* Tamaño reducido de la imagen */
+  translate: -50% -50%; /* Centra la imagen respecto a su punto medio */
+  transition: transform 1s; /* Transición suave al moverse */
+  inset: 50%; /* Coloca la imagen justo al centro del contenedor */
 }
-.checkbox{
-    width: auto;
-    height: 10px;
+div:hover {/* Efecto al pasar el mouse sobre el div */
+    transform: 
+    translateZ(100px) /* Mueve la caja hacia adelante en el eje Z (efecto de profundidad) */
+    rotateX(75deg);   /* Inclina la caja en el eje X */
+    box-shadow: 
+    10px 10px 10px #999,   /* Sombra exterior oscura */
+    -10px -10px 10px #fff; /* Sombra exterior clara */
 }
-fieldset{
-    border-radius: 5px;
-    border: 3px solid rgb(168, 207, 185);
-    padding: 8px 8px 20px 8px;
-    margin: 20px;
+div:hover + img.main {/* Efecto en la imagen cuando el div está en hover */
+    transform: 
+    translateY(-90px) /* Sube la imagen hacia arriba */
+    translateZ(250px); /* Acerca la imagen hacia el usuario (efecto 3D) */
 }
-legend{
-    padding: 0 6px;
-    color: #777;
-}
-a{
-    color: #69f;
-    text-decoration: none;
+img.cursor {/* Imagen de la mascota que sigue al cursor */
+  position: fixed; /* Fija la imagen en la ventana, sin importar el scroll */
+  width: 60px; /* Tamaño visible de la mascota */
+  pointer-events: none; /* Hace que la imagen no bloquee clics en otros elementos */
+  z-index: 9999; /* La coloca por encima de todos los demás elementos */
+  transition: top 0.1s linear, left 0.1s linear; /* Hace que el movimiento de la mascota sea suave */
 }

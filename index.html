@@ -3,66 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MIKU_Select, Datalist y Option</title>
-    <link rel="icon" href="./incono.jpg"">
+    <title>PRUEBA</title>
+    <link rel="icon" href="./assets/incono.jpg">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <form>
-        <h2>Formulario de contacto</h2>
-        <fieldset>
-            <legend>Informacion</legend>
-        <!--SIMPLE INPUT-->
-                <div class="form_input">
-                    <label>Nombre completo
-                        <input type="text" placeholder="Xochitl Soto" id="nombre">
-                    </label> 
-                </div>
-                <div class="form_input">
-                    <label>Email
-                        <input type="email" placeholder="ejemplo@gmail.com">
-                    </label> 
-                </div>
-                <div class="form_input">
-                    <label>Asunto
-                        <input type="text" placeholder="El asunto de tu Mensaje">
-                    </label> 
-                </div>
-        </fieldset>
-<!--SELECT & OPTION-->
-        <div class="form_input">
-            <label>Tipo de miku
-                <select name="type-of-user"> <!--ES PARA RECIBIR DATOS= ES EL VALUE-->
-                    <option value="user1">Miku sakura</option>
-                    <option value="user2">Miku vocalid</option>
-                    <option value="user3">Miku coneja</option>
-            </select>
-            </label>
-        </div>
-<!--DATALIST & OPTION-->
-        <div class="form_input">
-            <label>Referente
-                <input list="referente" name="referente">
-                <datalist id="referente" name="type-of-user">
-                    <option value="Musica">Youtube</option>
-                    <option value="Diubjos">Intagram</option>
-                    <option value="Videojuego">Play</option>
-                </datalist>
-            </label>
-        </div>
-<!--TEXTAREA-->
-        <div class="form_input">
-            <label>Mensaje
-                <textarea maxlength="140"
-                placeholder="Deja tu opinion sobre Miku..."></textarea>
-            </label> 
-        </div>
-<!--DAR CLICK AL TEXTO Y QUE PUEDA ESCRIBIR-->
-        <div class="form_input">
-            <label>Acepto los <a href="terms.html" target="_blank">terminos y condiciones</a>
-                <input type="checkbox" class="checkbox">
-            </label> 
-        </div>
-    </form>
+
+<h2 style="display: flex; align-items: center; justify-content: center; gap: 10px;">
+    <img src="https://pa1.aminoapps.com/8535/bf5e81e694de66457a525cc3f42289e6aa685f04r1-480-480_hq.gif" alt="Flor rosa" style="width:40px; height:40px; border-radius: 8px;" />
+    X O C H I T L &nbsp; S O T O
+    <img src="https://pa1.aminoapps.com/8535/bf5e81e694de66457a525cc3f42289e6aa685f04r1-480-480_hq.gif" alt="Flor rosa" style="width:40px; height:40px; border-radius: 8px;" />
+</h2>
+
+<img src="./assets/pagina.gif" alt="GIF decorativo" class="fixed-gif-left">
+
+<!-- Contenedor principal de todo el portafolio -->
+<article>
+    <div></div> <!-- Caja base con estilo 3D y efectos -->
+    <img src="./assets/calis.png" alt="Dibujo" class="main"> <!-- Imagen que flota al hacer hover en el div -->
+</article>
+<!-- Imagen que representa la mascota que sigue al cursor -->
+<img src="./assets/mascota.png" alt="Mascota" class="cursor" id="mascota">
+<!-- Script para hacer que la imagen 'mascota' siga el cursor -->
+<script>
+const mascota = document.getElementById('mascota'); // Selecciona la imagen por ID
+// Cada vez que el mouse se mueva, actualiza la posición de la mascota
+document.addEventListener('mousemove', (e) => {
+    mascota.style.left = e.pageX + 10 + 'px'; // Posición horizontal del mouse + 10px
+    mascota.style.top = e.pageY + 10 + 'px';  // Posición vertical del mouse + 10px
+    });
+</script>
+
 </body>
 </html>
