@@ -36,6 +36,10 @@ h2 {
   mask-image: linear-gradient(to right, rgba(0,0,0,1) 30%, rgba(0,0,0,0));         /* Ajuste de dirección */
 }
 
+
+
+
+
 article {
   display: grid;
   place-items: center;
