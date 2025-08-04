@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
 body {
   background-color: black;
+  margin: 0;
+  overflow-x: hidden;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 
 h2 {
   font-family: 'Quicksand', sans-serif;
@@ -10,8 +12,8 @@ h2 {
   font-size: 3rem;
   text-align: center;
   margin-top: 50px;
+  margin-bottom: 0;
   animation: cambiaRosa 3s linear infinite;
-  margin-bottom: 0; /* para evitar espacios extra */
 }
 
 @keyframes cambiaRosa {
@@ -22,60 +24,65 @@ h2 {
 }
 
 .fixed-gif-right {
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    width: auto;
-    z-index: 1; /* Más bajo que el texto, pero visible */
-    pointer-events: none;
-    opacity: 1;
-    /* Transparencia lateral hacia la derecha */
-    -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,1) 20%, rgba(0,0,0,0));
-    mask-image: linear-gradient(to left, rgba(0,0,0,1) 20%, rgba(0,0,0,0));
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: auto;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 1;
+  -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,1) 30%, rgba(0,0,0,0));
+  mask-image: linear-gradient(to left, rgba(0,0,0,1) 30%, rgba(0,0,0,0));
 }
 
-article {/* Estilo general del contenedor principal */
-  display: grid; /* Usa grid para organizar elementos */
-  place-items: center; /* Centra los elementos vertical y horizontalmente */
-  height: 100vh; /* Ocupa toda la altura de la pantalla */
-  perspective: 1000px; /* Agrega profundidad 3D a los hijos */
-  transform-style: preserve-3d; /* Mantiene la perspectiva para elementos hijos */
+article {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  perspective: 1000px;
+  position: relative;
+  z-index: 2;
 }
-div {/* Caja gris con sombras internas */
-  background-color: rgb(255, 182, 206); /* Color gris claro de fondo */
-  border-radius: 2rem; /* Bordes redondeados */
-    box-shadow: 
-    inset 10px 10px 10px #533939, /* Sombra interna oscura en la esquina inferior derecha */
-    inset -10px -10px 10px #fff; /* Sombra interna clara en la esquina superior izquierda */
-  width: 280px; /* Ancho fijo */
-  aspect-ratio: 1; /* Hace que el div sea cuadrado (1:1) */
-  transition: transform 1s; /* Transición suave en las transformaciones 3D */
+
+.caja3d {
+  background-color: rgb(255, 182, 206);
+  border-radius: 2rem;
+  box-shadow: 
+    inset 10px 10px 10px #533939,
+    inset -10px -10px 10px #fff;
+  width: 280px;
+  aspect-ratio: 1;
+  transition: transform 1s, box-shadow 1s;
 }
-img.main {/* Imagen que representa el dibujo sobre el div */
-  position: absolute; /* Se posiciona sobre el div */
-  width: 11%; /* Tamaño reducido de la imagen */
-  translate: -50% -50%; /* Centra la imagen respecto a su punto medio */
-  transition: transform 1s; /* Transición suave al moverse */
-  inset: 50%; /* Coloca la imagen justo al centro del contenedor */
+
+img.main {
+  position: absolute;
+  width: 11%;
+  translate: -50% -50%;
+  transition: transform 1s;
+  inset: 50%;
 }
-div:hover {/* Efecto al pasar el mouse sobre el div */
-    transform: 
-    translateZ(100px) /* Mueve la caja hacia adelante en el eje Z (efecto de profundidad) */
-    rotateX(75deg);   /* Inclina la caja en el eje X */
-    box-shadow: 
-    10px 10px 10px #999,   /* Sombra exterior oscura */
-    -10px -10px 10px #fff; /* Sombra exterior clara */
+
+.caja3d:hover {
+  transform:
+    translateZ(100px)
+    rotateX(75deg);
+  box-shadow:
+    10px 10px 10px #999,
+    -10px -10px 10px #fff;
 }
-div:hover + img.main {/* Efecto en la imagen cuando el div está en hover */
-    transform: 
-    translateY(-90px) /* Sube la imagen hacia arriba */
-    translateZ(250px); /* Acerca la imagen hacia el usuario (efecto 3D) */
+
+.caja3d:hover + img.main {
+  transform:
+    translateY(-90px)
+    translateZ(250px);
 }
-img.cursor {/* Imagen de la mascota que sigue al cursor */
-  position: fixed; /* Fija la imagen en la ventana, sin importar el scroll */
-  width: 60px; /* Tamaño visible de la mascota */
-  pointer-events: none; /* Hace que la imagen no bloquee clics en otros elementos */
-  z-index: 9999; /* La coloca por encima de todos los demás elementos */
-  transition: top 0.1s linear, left 0.1s linear; /* Hace que el movimiento de la mascota sea suave */
+
+img.cursor {
+  position: fixed;
+  width: 60px;
+  pointer-events: none;
+  z-index: 9999;
+  transition: top 0.1s linear, left 0.1s linear;
 }
