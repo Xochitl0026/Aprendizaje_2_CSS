@@ -25,16 +25,15 @@ h2 {
 
 .fixed-gif-left {
   position: fixed;
-  bottom: 0;          /* Cambiado de 'top: 0' a 'bottom: 0' */
-  left: 0;            /* Cambiado de 'right: 0' a 'left: 0' */
+  bottom: 20px;       /* Añade espacio desde abajo (ajusta el valor según necesites) */
+  left: 0;
   width: 500px;
   height: auto;
   z-index: 1;
-  margin-top: auto;
   pointer-events: none;
   opacity: 1;
-  -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,1) 30%, rgba(0,0,0,0)); /* Ajuste de dirección */
-  mask-image: linear-gradient(to right, rgba(0,0,0,1) 30%, rgba(0,0,0,0));         /* Ajuste de dirección */
+  -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,1) 30%, rgba(0,0,0,0));
+  mask-image: linear-gradient(to right, rgba(0,0,0,1) 30%, rgba(0,0,0,0));
 }
 
 article {
