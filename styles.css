@@ -30,10 +30,14 @@ h2 {
     z-index: 9999;
     pointer-events: none;
 
-    /* Efecto de transparencia lateral (lado derecho difuminado) */
+    /* Mantener al frente incluso con máscara */
+    isolation: isolate;
+
+    /* Efecto de transparencia lateral ajustado */
     -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 100%);
     mask-image: linear-gradient(to right, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 100%);
 }
+
 
 article {/* Estilo general del contenedor principal */
   display: grid; /* Usa grid para organizar elementos */
