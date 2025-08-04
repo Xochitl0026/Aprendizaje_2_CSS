@@ -43,10 +43,10 @@ article {/* Estilo general del contenedor principal */
   transform-style: preserve-3d; /* Mantiene la perspectiva para elementos hijos */
 }
 div {/* Caja gris con sombras internas */
-  background-color: #ddd; /* Color gris claro de fondo */
+  background-color: rgb(255, 182, 206); /* Color gris claro de fondo */
   border-radius: 2rem; /* Bordes redondeados */
     box-shadow: 
-    inset 10px 10px 10px #999, /* Sombra interna oscura en la esquina inferior derecha */
+    inset 10px 10px 10px #533939, /* Sombra interna oscura en la esquina inferior derecha */
     inset -10px -10px 10px #fff; /* Sombra interna clara en la esquina superior izquierda */
   width: 280px; /* Ancho fijo */
   aspect-ratio: 1; /* Hace que el div sea cuadrado (1:1) */
