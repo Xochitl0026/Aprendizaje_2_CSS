@@ -36,8 +36,6 @@ h2 {
     mask-image: linear-gradient(to left, rgba(0,0,0,1) 20%, rgba(0,0,0,0));
 }
 
-
-
 article {/* Estilo general del contenedor principal */
   display: grid; /* Usa grid para organizar elementos */
   place-items: center; /* Centra los elementos vertical y horizontalmente */
