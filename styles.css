@@ -25,7 +25,8 @@ h2 {
 
 .fixed-gif-left {
   position: fixed;
-  bottom: 20px;       /* Añade espacio desde abajo (ajusta el valor según necesites) */
+  top: auto;       /* Anula top si estaba definido */
+  bottom: 20px;    /* Ajusta este valor para subir/bajar el GIF */
   left: 0;
   width: 500px;
   height: auto;
