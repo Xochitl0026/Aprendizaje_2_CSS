@@ -30,7 +30,6 @@ h2 {
     z-index: 1; /* Más bajo que el texto, pero visible */
     pointer-events: none;
     opacity: 1;
-
     /* Transparencia lateral hacia la derecha */
     -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,1) 20%, rgba(0,0,0,0));
     mask-image: linear-gradient(to left, rgba(0,0,0,1) 20%, rgba(0,0,0,0));
