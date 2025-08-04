@@ -21,22 +21,21 @@ h2 {
   100% { color: #fa66ff; }
 }
 
-.fixed-gif-left {
+.fixed-gif-right {
     position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 500px;
-    height: auto;
-    z-index: 9999;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: auto;
+    z-index: 1; /* Más bajo que el texto, pero visible */
     pointer-events: none;
+    opacity: 1;
 
-    /* Mantener al frente incluso con máscara */
-    isolation: isolate;
-
-    /* Efecto de transparencia lateral ajustado */
-    -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 100%);
-    mask-image: linear-gradient(to right, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 100%);
+    /* Transparencia lateral hacia la derecha */
+    -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,1) 20%, rgba(0,0,0,0));
+    mask-image: linear-gradient(to left, rgba(0,0,0,1) 20%, rgba(0,0,0,0));
 }
+
 
 
 article {/* Estilo general del contenedor principal */
