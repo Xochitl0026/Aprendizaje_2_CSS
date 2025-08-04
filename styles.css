@@ -20,7 +20,6 @@ h2 {
   66%  { color: #ff5f87; }
   100% { color: #fa66ff; }
 }
-
 .fixed-gif-left {
     position: fixed;
     bottom: 0;
@@ -29,12 +28,10 @@ h2 {
     height: auto;
     z-index: 9999;
     pointer-events: none;
-
-    /* Efecto de transparencia lateral (lado derecho difuminado) */
-    -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,1) 70%, rgba(0,0,0,0) 100%);
-    mask-image: linear-gradient(to right, rgba(0,0,0,1) 70%, rgba(0,0,0,0) 100%);
+    /* Máscara ajustada para que las florecitas sí se vean */
+    -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,1) 85%, rgba(0,0,0,0) 100%);
+    mask-image: linear-gradient(to right, rgba(0,0,0,1) 85%, rgba(0,0,0,0) 100%);
 }
-
 article {/* Estilo general del contenedor principal */
   display: grid; /* Usa grid para organizar elementos */
   place-items: center; /* Centra los elementos vertical y horizontalmente */
