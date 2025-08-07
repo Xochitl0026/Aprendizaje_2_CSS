@@ -1,41 +1,47 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>PRUEBA</title>
-  <link rel="icon" href="./incono.jpg">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xochitl Soto | Portafolio</title>
+    <link rel="icon" href="./assets/incono.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Fuente futurista (Google Fonts) -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Fondo de estrellas animado (CSS puro) -->
+    <div class="stars"></div>
+    
+    <!-- Título principal con mejoras -->
+    <h2 style="display: flex; align-items: center; justify-content: center; gap: 10px;">
+        <img src="https://pa1.aminoapps.com/8535/bf5e81e694de66457a525cc3f42289e6aa685f04r1-480-480_hq.gif" alt="Flor rosa" class="flor-rosa" />
+        <span class="titulo-animado">X O C H I T L &nbsp; S O T O</span>
+        <img src="https://pa1.aminoapps.com/8535/bf5e81e694de66457a525cc3f42289e6aa685f04r1-480-480_hq.gif" alt="Flor rosa" class="flor-rosa" />
+    </h2>
 
-<!-- Encabezado con gifs laterales -->
-<h2 style="display: flex; align-items: center; justify-content: center; gap: 10px;">
-  <img src="https://pa1.aminoapps.com/8535/bf5e81e694de66457a525cc3f42289e6aa685f04r1-480-480_hq.gif" alt="Flor rosa" style="width:40px; height:40px; border-radius: 8px;" />
-  X O C H I T L &nbsp; S O T O
-  <img src="https://pa1.aminoapps.com/8535/bf5e81e694de66457a525cc3f42289e6aa685f04r1-480-480_hq.gif" alt="Flor rosa" style="width:40px; height:40px; border-radius: 8px;" />
-</h2>
+    <!-- GIF decorativo (ajustado para no interferir) -->
+    <img src="./assets/pagina.gif" alt="GIF decorativo" class="fixed-gif-left">
 
-<!-- GIF decorativo a la derecha -->
-<img src="./pagina.gif" alt="GIF decorativo" class="fixed-gif-left">
+    <!-- Contenedor principal con efecto 3D mejorado -->
+    <article>
+        <div class="caja-3d"></div>
+        <img src="./assets/calis.png" alt="Dibujo" class="main">
+    </article>
 
-<!-- Contenedor principal -->
-<article>
-  <div class="caja3d"></div>
-  <img src="./calis.png" alt="Dibujo" class="main">
-</article>
+    <!-- Sección de animación personalizada (tu número "3") -->
+    <div class="animacion-personalizada">3</div>
 
-<!-- Mascota que sigue al cursor -->
-<img src="./mascota.png" alt="Mascota" class="cursor" id="mascota">
+    <!-- Mascota que sigue al cursor (mejorada) -->
+    <img src="./assets/mascota.png" alt="Mascota" class="cursor" id="mascota">
 
-<!-- Script de seguimiento del cursor -->
-<script>
-const mascota = document.getElementById('mascota');
-document.addEventListener('mousemove', (e) => {
-  mascota.style.left = e.pageX + 10 + 'px';
-  mascota.style.top = e.pageY + 10 + 'px';
-});
-</script>
-
+    <!-- Script para la mascota (sin cambios) -->
+    <script>
+        const mascota = document.getElementById('mascota');
+        document.addEventListener('mousemove', (e) => {
+            mascota.style.left = e.pageX + 10 + 'px';
+            mascota.style.top = e.pageY + 10 + 'px';
+        });
+    </script>
 </body>
 </html>
