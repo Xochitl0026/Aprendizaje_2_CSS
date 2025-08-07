@@ -1,127 +1,75 @@
-/* RESET Y ESTILOS BASE */
 body {
-    background-color: #000;
-    margin: 0;
-    overflow-x: hidden;
-    font-family: 'Quicksand', sans-serif;
-    color: #fff;
+  background-color: black;
 }
 
-/* FONDO DE ESTRELLAS ANIMADO (EFECTO FUTURISTA) */
-.stars {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    z-index: -1;
-}
-.stars::before {
-    content: "";
-    position: absolute;
-    width: 2px;
-    height: 2px;
-    background: #ffd1dc;
-    box-shadow: 
-        50vw 20vh 0 0.5px #fa66ff,
-        30vw 60vh 0 1px #ffafb3,
-        80vw 70vh 0 1.5px #ff3399;
-    animation: twinkle 5s infinite alternate;
-}
-@keyframes twinkle {
-    0% { opacity: 0.2; }
-    100% { opacity: 1; }
-}
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 
-/* TÍTULO PRINCIPAL (MEJORADO) */
 h2 {
-    font-family: 'Press Start 2P', cursive;
-    font-size: 2.5rem;
-    text-align: center;
-    margin-top: 30px;
-    position: relative;
-    z-index: 10;
-}
-.titulo-animado {
-    background: linear-gradient(45deg, #ffafb3, #fa66ff, #ff3399);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    animation: neon-glow 2s ease-in-out infinite alternate;
-}
-@keyframes neon-glow {
-    from { text-shadow: 0 0 5px #ffafb3; }
-    to { text-shadow: 0 0 20px #fa66ff, 0 0 30px #ff3399; }
-}
-.flor-rosa {
-    width: 40px;
-    height: 40px;
-    border-radius: 8px;
-    filter: drop-shadow(0 0 5px #ff3399);
-    animation: float 3s ease-in-out infinite;
-}
-@keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 50px;
+  animation: cambiaRosa 3s linear infinite;
+  margin-bottom: 0; /* para evitar espacios extra */
 }
 
-/* CONTENEDOR 3D (MEJORADO) */
-article {
-    display: grid;
-    place-items: center;
-    height: 70vh;
-    perspective: 1000px;
+@keyframes cambiaRosa {
+  0%   { color: #ffafb3; }
+  33%  { color: #ff3399; }
+  66%  { color: #ff5f87; }
+  100% { color: #fa66ff; }
 }
-.caja-3d {
-    background: linear-gradient(145deg, #ffafb3, #ffd1dc);
-    border-radius: 2rem;
-    box-shadow: 
-        inset 10px 10px 15px rgba(255, 87, 135, 0.5),
-        inset -10px -10px 15px rgba(255, 255, 255, 0.8),
-        0 0 30px rgba(255, 87, 135, 0.6);
-    width: 280px;
-    aspect-ratio: 1;
-    transition: transform 0.5s, box-shadow 0.5s;
-}
-.caja-3d:hover {
-    transform: rotateX(75deg) translateZ(50px);
-    box-shadow: 
-        0 0 50px rgba(255, 87, 135, 0.8),
-        0 0 70px rgba(255, 87, 135, 0.6);
-}
-.main {
-    width: 11%;
-    transition: transform 0.5s;
-    filter: drop-shadow(0 0 10px #fa66ff);
-}
-.caja-3d:hover + .main {
-    transform: translateY(-90px) translateZ(100px) scale(1.2);
-}
-
-/* ANIMACIÓN PERSONALIZADA (TU NÚMERO "3") */
-.animacion-personalizada {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    font-size: 3rem;
-    color: #ff3399;
-    animation: cambiaRosa 3s linear infinite;
-    z-index: 1000;
-}
-
-/* MASCOTA (MEJORADA) */
-.cursor {
-    width: 80px;
-    filter: drop-shadow(0 0 10px #fa66ff);
-    transition: transform 0.3s;
-}
-.cursor:hover {
-    transform: scale(1.2) rotate(10deg);
-}
-
-/* GIF DECORATIVO (AJUSTE) */
 .fixed-gif-left {
-    width: 300px;
-    opacity: 0.7;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 500px;
+    height: auto;
+    z-index: 9999;
+    pointer-events: none;
+}
+article {/* Estilo general del contenedor principal */
+  display: grid; /* Usa grid para organizar elementos */
+  place-items: center; /* Centra los elementos vertical y horizontalmente */
+  height: 100vh; /* Ocupa toda la altura de la pantalla */
+  perspective: 1000px; /* Agrega profundidad 3D a los hijos */
+  transform-style: preserve-3d; /* Mantiene la perspectiva para elementos hijos */
+}
+div {/* Caja gris con sombras internas */
+  background-color: #ddd; /* Color gris claro de fondo */
+  border-radius: 2rem; /* Bordes redondeados */
+    box-shadow: 
+    inset 10px 10px 10px #999, /* Sombra interna oscura en la esquina inferior derecha */
+    inset -10px -10px 10px #fff; /* Sombra interna clara en la esquina superior izquierda */
+  width: 280px; /* Ancho fijo */
+  aspect-ratio: 1; /* Hace que el div sea cuadrado (1:1) */
+  transition: transform 1s; /* Transición suave en las transformaciones 3D */
+}
+img.main {/* Imagen que representa el dibujo sobre el div */
+  position: absolute; /* Se posiciona sobre el div */
+  width: 11%; /* Tamaño reducido de la imagen */
+  translate: -50% -50%; /* Centra la imagen respecto a su punto medio */
+  transition: transform 1s; /* Transición suave al moverse */
+  inset: 50%; /* Coloca la imagen justo al centro del contenedor */
+}
+div:hover {/* Efecto al pasar el mouse sobre el div */
+    transform: 
+    translateZ(100px) /* Mueve la caja hacia adelante en el eje Z (efecto de profundidad) */
+    rotateX(75deg);   /* Inclina la caja en el eje X */
+    box-shadow: 
+    10px 10px 10px #999,   /* Sombra exterior oscura */
+    -10px -10px 10px #fff; /* Sombra exterior clara */
+}
+div:hover + img.main {/* Efecto en la imagen cuando el div está en hover */
+    transform: 
+    translateY(-90px) /* Sube la imagen hacia arriba */
+    translateZ(250px); /* Acerca la imagen hacia el usuario (efecto 3D) */
+}
+img.cursor {/* Imagen de la mascota que sigue al cursor */
+  position: fixed; /* Fija la imagen en la ventana, sin importar el scroll */
+  width: 60px; /* Tamaño visible de la mascota */
+  pointer-events: none; /* Hace que la imagen no bloquee clics en otros elementos */
+  z-index: 9999; /* La coloca por encima de todos los demás elementos */
+  transition: top 0.1s linear, left 0.1s linear; /* Hace que el movimiento de la mascota sea suave */
 }
